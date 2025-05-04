@@ -13,7 +13,7 @@
   }
   
   header {
-    background: #111;
+    background:rgb(26, 26, 70);
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -44,10 +44,12 @@
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
+
   }
   
   .nav-links a:hover {
-    color: #00b894;
+    font-size: larger;
+    color: rgb(0, 162, 255);
   }
   
   .hero {
@@ -92,7 +94,7 @@
     text-align: center;
   }
   .services, .about, .portfolio, .contact h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
   }
   .services, .about, .portfolio, .contact p{
@@ -123,8 +125,14 @@
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+.about p{
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 20px;
+}
   .about img {
-    height: 250px;
+    height: 200px;
+    padding-top: 20px;
     opacity: 90%;
     filter: grayscale(70%);
     border-radius: 50%;
