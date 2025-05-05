@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <header>
+  <header>
     <nav class="navbar">
       <div class="logo">KK DEVELOPER</div>
       <div class="hamburger" id="hamburger">&#9776;</div>
@@ -98,6 +98,46 @@
       <p>Hello! I'm <strong>Zeeshan Siddique</strong>, Social Media Manager of KK DEVELOPER.</p>
     </div>
     </section>
+<!-- Skills & Certificates Section -->
+<section id="certificates" class="certificates-slider">
+  <h2>Certificates Earned from DigiSkills.pk</h2>
+  <div class="slider-wrapper">
+    <button class="slider-btn backward" aria-label="Previous">&#10094;</button>
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="assets/freelancing.PNG" alt="freelancing">
+        <img src="assets/digital-marketing.PNG" alt="digital-marketing">
+        <img src="assets/affiliate-marketing.PNG" alt="affiliate-marketing">
+        <img src="assets/virtual-assistant.PNG" alt="virtual-assistant">
+        <!-- Add more images as needed -->
+      </div>
+    </div>
+    <button class="slider-btn forward" aria-label="Next">&#10095;</button>
+  </div>
+
+  <script>
+    const track = document.querySelector('.slider-track');
+    const leftBtn = document.querySelector('.slider-btn.backward');
+    const rightBtn = document.querySelector('.slider-btn.forward');
+
+    // Pause auto-scroll on hover
+    track.addEventListener('mouseenter', () => {
+      track.style.animationPlayState = 'paused';
+    });
+    track.addEventListener('mouseleave', () => {
+      track.style.animationPlayState = 'running';
+    });
+
+    // Manual navigation
+    leftBtn.addEventListener('click', () => {
+      document.querySelector('.slider-container').scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+      document.querySelector('.slider-container').scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  </script>
+</section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
