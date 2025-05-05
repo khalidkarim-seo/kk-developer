@@ -338,6 +338,9 @@ footer {
   .hero p {
     font-size: 1.2rem;
   }
+  .about p{
+    padding: 10px;
+  }
   .left{
     width: 60%;
   }
@@ -369,7 +372,7 @@ footer {
 }
 
 .slider-track img {
-  width: 40%;
+  width: 400px;
   margin: 0 15px;
   height: auto;
   border-radius: 10px;
@@ -429,7 +432,7 @@ footer {
 }
 @media (max-width: 768px) {
   .slider-track img {
-    width: 40%;
+    width: 300px;
     margin: 0 10px;
   }
 }
