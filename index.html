@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khalid karim Digital markekting services</title>
+  <title>Khalid Karim portfolio | Web Development Services</title>
   <meta name="description" content="Grow your business with KK Developer. Professional Web Development, SEO, and Digital Marketing Services in Pakistan.">
   <meta name="keywords" content="Web Development, SEO, Digital Marketing, Webflow, WordPress, KK Developer, Khalid Karim">
   <meta name="author" content="Khalid Karim">
-  <link rel="icon" href="assets/favicon-kk-Developer.png" type="image/png">
+  <link rel="icon" href="assets/Developer.png" type="image/png">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -36,7 +36,8 @@
 
 <body>
   <header>
-    <link rel="icon" href="assets/favicon-kk-Developer.png" type="image/png">
+      <link rel="icon" href="assets/Developer.png" type="image/png">
+
     <nav class="navbar">
       <div class="logo">KK DEVELOPER</div>
       <div class="hamburger" id="hamburger">&#9776;</div>
@@ -68,7 +69,7 @@
           <img class="left" src="assets/web-development-services.png" alt="Web Development Services">
           <h3>Website Development</h3>
           <p>Custom, responsive, and fast-loading websites tailored to your business.
-            Custom Coding(HTML, CSS, JavaScript), WordPress and Webflow services.
+            Custom Coding(HTML, CSS, JavaScript), Advanced WordPress and Webflow services.
           </p>
         </div>
         <div class="card">
@@ -82,7 +83,7 @@
           <img class="left" src="assets/social-media-marketing.png" alt="Social Media Marketing services">
           <h3>Social Media Marketing</h3>
           <p>Grow your audience and brand presence across all major platforms.
-            Facebook, Instagram, linkedin Ads Creation and managment.
+            Facebook, Instagram, linkedin Ads Running Services and managment.
           </p>
         </div>
       </div>
@@ -91,15 +92,17 @@
     <!-- About Section -->
     <section id="about" class="about">
       <H2>About Us</H2>
+    <div class="about-card">
       <img src="assets/khalid-karim.png" alt="Khalid Karim, CEO kk-developer">
       <h2>Founder & CEO</h2>
       <p>Hello! I'm <strong>Khalid Karim</strong>, founder of KK DEVELOPER. With Years of experience in web development, SEO, and digital marketing, I help businesses build strong online identities that drive results.</p>
-    <div>
+    </div>
+    <div class="about-card">
       <img src="assets/ali-hussain.png" alt="ali hussain, Managing Director">
       <h2>Managing Director</h2>
       <p>Hello! I'm <strong>Ali Hussain</strong>, Manager and Focal Person of KK DEVELOPER.</p>
     </div>
-    <div>
+    <div class="about-card">
       <img src="assets/Zeeshan-Siddique.png" alt="Zeeshan Siddique, social media Manager">
       <h2>Social Media Manager</h2>
       <p>Hello! I'm <strong>Zeeshan Siddique</strong>, Social Media Manager of KK DEVELOPER.</p>
@@ -107,7 +110,7 @@
     </section>
 <!-- Skills & Certificates Section -->
 <section id="certificates" class="certificates-slider">
-  <h2>Certificates Earned from DigiSkills.pk</h2>
+  <h2>Certified From DigiSkills Pakistan</h2>
   <div class="slider-wrapper">
     <button class="slider-btn backward" aria-label="Previous">&#10094;</button>
     <div class="slider-container">
@@ -148,7 +151,7 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
-      <h2>My Portfolio</h2>
+      <h2>Our Web Development Work</h2>
       <p>Some of the recent projects I've worked on.</p>
       <div class="portfolio-grid">
         <div class="project-card">
@@ -192,7 +195,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <h2>Contact Me</h2>
+      <h2>Contact Us</h2>
       <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="5ded0990-dab7-48df-8947-7044915f9b2c">
         <input type="text" name="name" placeholder="Your name" required>
@@ -206,7 +209,6 @@
   <!-- Footer -->
   <footer>
     <p>© 2025 KK DEVELOPER. All Rights Reserved.</p>
-    <img src="assets/kk-developer-logo.png" alt="KK-Developer-Logo">
     <ul class="social">
       <li><a href="https://wa.me/923078829986" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
       <li><a href="mailto:khalidkarim.seo@gmail.com" aria-label="Email Khalid Karim"><i class="fa-solid fa-envelope"></i></a></li>
@@ -253,23 +255,5 @@
       document.querySelectorAll(".left").forEach(el => observer.observe(el));
     });
   </script>
-
-  <!-- Facebook SDK -->
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({ xfbml: true, version: 'v17.0' });
-    };
-    (function (d, s, id) {
-      if (d.getElementById(id)) return;
-      const js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      d.getElementsByTagName(s)[0].parentNode.insertBefore(js, s);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <div class="fb-customerchat"
-    attribution="setup_tool"
-    page_id="100367868549463">
-  </div>
 </body>
 </html>
