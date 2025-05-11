@@ -351,12 +351,13 @@ footer::before {
     font-size: 1.2rem;
   }
   .about{
-    max-width: 90%;
+    max-width: 100%;
   }
   .about h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .about p{
+	  font-size: .8rem;
     padding: 10px;
   }
   
