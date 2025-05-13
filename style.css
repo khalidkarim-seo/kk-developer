@@ -1,17 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
   }
   
   body {
     line-height: 1.6;
     background:black;
-    color: #333;
+    color:rgb(211, 210, 210);
+  }
+  #services, #about, #portfolio {
+    margin-top: 80px;
   }
   
   header {
+    height: 70px;
     background:rgba(245, 245, 245, 0.801);
     padding: 1rem 0;
     position: sticky;
@@ -20,7 +28,7 @@
     transition: .5s ease;
   }
   header:hover{
-    background: whitesmoke;
+    background: rgb(168, 140, 140);
 
   }
   
@@ -32,17 +40,23 @@
     padding: 0 20px;
   }
   
-  .logo {
-    font-size: 2rem;
+  .logo a{
+    text-decoration: none;
     color:black;
+    font-size: 1.8rem;
     font-weight: bold;
+
+
+  }
+  .highlight {
+    color: orangered;
   }
   
   .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
   }
   
@@ -60,7 +74,6 @@
   
   .hero {
     height: 100vh;
-    color: white;
     text-align: center;
     padding: 100px 20px;
   }
@@ -75,21 +88,43 @@
   .hero p{
     font-size: 2rem;
   }
-  .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    background:orange;
-    color: black;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.6s;
-  }
-  .btn:hover {
-    background: #d87402;
-    letter-spacing: 2px;
-  }
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 4px solid whitesmoke;
+  border-radius: 5%;
+  text-decoration: none;
+  font-size: 3rem;
+  color: whitesmoke;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.5s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background:rgba(252, 252, 252, 0.87);
+  z-index: -1;
+  transition: height 0.5s ease;
+}
+
+.btn:hover::before {
+  height: 100%;
+}
+
+.btn:hover {
+  color: green;
+  box-shadow: 0 8px 12px 0 rgba(216, 116, 2, 0.5); /* Optional glow */
+}
   
   .services, .about, .portfolio, .contact {
     padding: 60px 20px;
@@ -99,7 +134,6 @@
   }
   .services, .about, .portfolio, .contact h2 {
   font-size: 3rem;
-  color:wheat;
   }
   .services, .about, .portfolio, .contact p{
     font-size: 1.5rem;
@@ -114,7 +148,7 @@
   }
   
   .card {
-    background:rgba(201, 201, 201, 0.486);
+    background:rgba(201, 201, 201, 0.274);
     padding: 20px;
     flex: 1 1 250px;
     border-radius: 8px;
@@ -132,6 +166,7 @@
 }
   .about img {
     height: 200px;
+    width: 160px;
     padding-top: 20px;
     opacity: 90%;
     filter: grayscale(70%);
@@ -140,8 +175,6 @@
   .about-card{
     margin: 20px;
     padding: 40px;
-    align-items: center;
-    text-align: center;
     background:rgba(0, 0, 0, 0.507);
     border-radius: 8px;
     box-shadow: 0 2px 5px wheat;
@@ -155,7 +188,6 @@
   }
   
   .portfolio {
-    color:white;
     padding: 60px 20px;
     max-width:100%;
     margin: auto;
@@ -214,21 +246,20 @@
   
   button {
     padding: 10px;
-    background:rgb(0, 119, 255);
-    color: white;
+    background:orange;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
   button:hover {
-    background: #019874;
+    background:orangered;
+    color: whitesmoke;
   }
   
   /*footer*/
 footer {
   background-color: #261011;
-  color: white;
   font-size: 1rem;
   text-align: center;
   padding: 20px 10px;
@@ -261,7 +292,7 @@ footer {
 }
 
 .social li:hover a {
-  color: blueviolet;
+  color: orange;
 }
 
 /* Optional: Add a subtle border on top of footer */
@@ -333,6 +364,24 @@ footer::before {
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .services, .about, .portfolio, .contact {
+    max-width:100%;
+  }
+  .services, .about, .portfolio, .contact h2 {
+  font-size: 1.6rem;
+  }
+  .services, .about, .portfolio, .contact p{
+    font-size: .9rem;
+  }
+.logo{
+  font-size: 1.5rem;
+}
+.hero h1{
+  font-size: 2rem;
+}
+.hero p{
+  font-size: 1.5rem;
+}
 
   .service-cards {
     flex-direction: column;
@@ -345,20 +394,6 @@ footer::before {
 
   .hero-content h1 {
     font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-  }
-  .about{
-    max-width: 100%;
-  }
-  .about h2{
-    font-size: 1.5rem;
-  }
-  .about p{
-	  font-size: .8rem;
-    padding: 10px;
   }
   
   .left{
@@ -376,7 +411,7 @@ footer::before {
 .certificates-slider h2 {
   margin-bottom: 30px;
   font-size: 2rem;
-  color: white;
+  color:whitesmoke;
 }
 
 .slider-container {
