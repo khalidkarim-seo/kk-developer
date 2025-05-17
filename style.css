@@ -166,7 +166,7 @@
 }
   .about img {
     height: 200px;
-    
+    width: 160px;
     padding-top: 20px;
     opacity: 90%;
     filter: grayscale(70%);
